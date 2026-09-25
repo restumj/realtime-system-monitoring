@@ -6,7 +6,7 @@ import psutil
 def create_data_json():
     cpu_usage = psutil.cpu_percent(interval=1)
     ram = psutil.virtual_memory()
-    return {'cpu_usage': cpu_usage, 'total_ram': ram.total/(1024**3), 'available_ram': ram.available/(1024**3), 'used_ram': ram.used/(1024**3), 'ram_usage': ram.percent}
+    return {'cpu_usage': f'{cpu_usage:.2f}%', 'total_ram': f'{ram.total/(1024**3):.2f} GB', 'available_ram': f'{ram.available/(1024**3):.2f} GB', 'used_ram': f'{ram.used/(1024**3):.2f} GB', 'ram_usage': f'{ram.percent:.2f}%'}
 
 app = Flask(__name__)
 
