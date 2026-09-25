@@ -7,16 +7,25 @@
 }
 
 .card {
-    display: grid;
     align-items: center;
     background-color: rgb(114, 164, 230);
-    padding: 20px;
     margin: 10px;
     border-radius: 10px;
     text-align: center;
-    min-width: 20%;
+    min-width: 50%;
+    overflow: hidden;
 }
 
-#cpu, #ram {
-    color: white;
+.card-title {
+    background-color: beige;
+    padding-top: 6px;
+    margin: 0;
+}
+
+#cpu_usage, .ram {
+    color: rgb(54, 36, 159);
+}
+
+.ram {
+    
 }

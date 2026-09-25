@@ -8,14 +8,23 @@
     <title>Realtime System Monitoring</title>
 </head>
 <body>
+    <h1 style="text-align: center; margin-bottom: 9px;">Realtime System Monitoring</h1>
+    <p style="text-align: center; margin-top: 0;">by Restu Manujaya</p>
     <div class="container">
         <div class="card">
-            <h3>CPU</h3>
-            <p><span id="cpu">Loading...</span></p>
+            <h3 class="card-title">CPU</h3>
+            <p style="background-color: rgb(164, 198, 228); margin: 0;">Ryzen 7 6800H</p>
+            <p><span id="cpu_usage">CPU Usage: Loading...</span></p>
         </div>
         <div class="card">
-            <h3>RAM</h3>
-            <p><span id="ram">Loading...</span></p>
+            <h3 class="card-title">RAM</h3>
+            <p style="background-color: rgb(164, 198, 228); margin: 0;">2x8GB 4800MTs DDR5</p>
+            <div class="ram">
+                <p><span id="ram-total">Total: Loading...</span></p>
+                <p><span id="ram-available">Available: Loading...</span></p>
+                <p><span id="ram-used">Used: Loading...</span></p>
+                <p><span id="ram-usage">Usage: Loading...</span></p>
+            </div>
         </div>
     </div>
 </body>
