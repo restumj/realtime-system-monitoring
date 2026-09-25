@@ -6,7 +6,8 @@ async function updateStats() {
     document.getElementById('ram').innerText = data.used_ram;
 }
 
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
+    updateStats();
     setInterval(() => {
         updateStats();
     }, 1000);
